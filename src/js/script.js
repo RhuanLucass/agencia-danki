@@ -41,7 +41,8 @@ function showMenu() {
 
 // ANIMAÇÃO MENU
 function toggleMenu(){
-  nav.classList.toggle('mobile-toggle');
+  if(window.innerWidth <= 1024)
+    nav.classList.toggle('mobile-toggle');
 }
 
 overlay.addEventListener('click', hideMenu);
